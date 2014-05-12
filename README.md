@@ -10,7 +10,7 @@ Feel free to install it and try it out.
 
 On first run it will create an ini file. if you want to change settings you can do so and then execute magma.reload in console.
 
-##Settings:
+## Settings:
 + **run_timer:** time between queue checks. (in seconds) this can be pretty low IMO. The timer will stop when the queue is empty and will restart when a new entry is added. Assuming you are using this for a simple delay before executing a TP home or something like that you should be ok even with a lot of players.
 + **execute_delay:** actual time in seconds before the event will trigger/execute
 + **expiration:** I added this in case there was an error. if somehow an entry is missed and goes over my this number of seconds, it will be removed and will not execute. this never happened in testing but I guess it could if the timer crashed and was restarted before the queue was empty.
